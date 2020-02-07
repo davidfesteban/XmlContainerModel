@@ -7,6 +7,10 @@ public class XmlContainerModel {
     /**
      * Esta clase se dedica a representar el estado de las vistas que hay, eliminando hacer un modelo
      * por cada vista y supliendo la necesidad de DataBinding.
+     *
+     * Ejemplo de uso desde el ViewModel: new XmlContainerModel().addEstadoVista("miEstadoDelSwitch", Boolean.FALSE);
+     * Activity: miSwitch.setEnabled(xmlContainerModel.<Boolean>get("miEstadoDelSwitch")
+     * Tip: "miEstadoDelSwitch" podría reemplazarse por miSwitch.getId()
      */
 
     private Map<String, TypeWrapper> valoresMapaVista;
